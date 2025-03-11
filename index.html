@@ -1,0 +1,105 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<script src="https://kit.fontawesome.com/a14ae32021.js" crossorigin="anonymous"></script>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>This one is for my BABY BOY VENU </title>
+
+<style type="text/css">
+@font-face {
+	font-family: digit;
+	src: url('digital-7_mono.ttf') format("truetype");
+}
+</style>
+<link href="css/default.css" type="text/css" rel="stylesheet">
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/garden.js"></script>
+<script type="text/javascript" src="js/functions.js"></script>
+
+</head>
+
+<body>
+
+<div id="mainDiv">
+	<div id="content">
+		<div id="code">
+			<span class="comments">/**</span><br />
+			<span class="space"/><span class="comments">*AN APOLOGY LETTER TO THE LOVE OF MY LIFE</span><br />
+			<span class="space"/><span class="comments">*/</span><br />
+			Hey BABY BOY !<br />
+			I aplogize for not telling you earlier.<br />
+			<span class="comments">// I didn't mean to hide it. </span><br />
+			I know u are angry on me.<br />
+			<span class="comments">// I can't leave this situation like this. It's all my fault. So I have to take the responsibility of fixing this.</span><br />
+			I am not supporting what I have done but,<br />
+			I want you to understand "WHY!?"<br />
+			While we are fighting you said "nenu niku avasaram ledhu.. anduke cheyaledhu", If I tell you that I went for a movie I thought you will feel it as what u said.. so I hesitated to tell you.<br />
+			<br />
+			We have traveLled a long way together;<br />
+			There have been fights BUT we FIX them  ;<br />
+			<span class="comments">// As the time went on,</span><br />
+			Our Bond grew Stronger and Stronger;<br />
+			<br>
+			<br>
+			All I want to say is:<br />
+			Baby, I always love you ❤ and I will love you forever❤💋;<br />
+			<br>
+			<br>
+			Now please accept my sorry baby... 😔 If u accept so.. Please click the heart below as you want to hug me.<br />
+			<br>
+			<span id="heartspan">
+			<a href="image.jpg"><i class="fas fa-heart" id="icon"></i></a>
+			</span>
+		</div>
+		<div id="loveHeart">
+			<canvas id="garden"></canvas>
+			<div id="words">
+				<div id="messages">
+					VENU❤KUSUMA FOREVER
+					<div id="elapseClock"></div>
+				</div>
+				<div id="loveu">
+					I LOVE YOU SO MUCH<br/>
+					<div class="signature">- YOUR LOVE KUSUMA</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<script type="text/javascript">
+var offsetX = $("#loveHeart").width() / 2;
+var offsetY = $("#loveHeart").height() / 2 - 55;
+var together = new Date();
+together.setFullYear(2020, 12, 24);
+together.setHours(23);
+together.setMinutes(30);
+together.setSeconds(0);
+together.setMilliseconds(0);
+
+if (!document.createElement('canvas').getContext) {
+	var msg = document.createElement("div");
+	msg.id = "errorMsg";
+	msg.innerHTML = "Your browser doesn't support HTML5!<br/>Recommend use Chrome 14+/IE 9+/Firefox 7+/Safari 4+"; 
+	document.body.appendChild(msg);
+	$("#code").css("display", "none")
+	$("#copyright").css("position", "absolute");
+	$("#copyright").css("bottom", "10px");
+	document.execCommand("stop");
+} else {
+	setTimeout(function () {
+		startHeartAnimation();
+	}, 5000);
+
+	timeElapse(together);
+	setInterval(function () {
+		timeElapse(together);
+	}, 500);
+
+	adjustCodePosition();
+	$("#code").typewriter();
+}
+</script>
+</body>
+</html>
